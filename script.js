@@ -68,12 +68,13 @@ for(i = 0; i < members.length; i++){
     console.log(member);
     for(let key in member){
         console.log(key, member[key]);
-
-        card.innerHTML += key + ': ' + member[key] + '</br>';
+        if(key.includes('photo')){
+            card.innerHTML = '<h3>' + member.name + '</h3>' +'<h4>' + member.role + '</h4>' + `<img src="img/${member.photo}" width=100%>`;
+        }
         
-       
+        
     }
-    mainElement.appendChild(card);
+
 }
 
 
