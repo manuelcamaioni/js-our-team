@@ -67,14 +67,9 @@ for(i = 0; i < members.length; i++){
     const member = members[i];
 
     console.log(member);
-
-    for(let key in member){
-        console.log(key, member[key]);
-
-        if(key.includes('photo')){
-            card.innerHTML = `<img src="img/${member.photo}" width=100%>` + '<h3>' + member.name + '</h3>' +'<h4>' + member.role + '</h4>';
-        }
-    }
+    card.innerHTML = `<img src="img/${member.photo}" width=100%>` + '<h3>' + member.name + '</h3>' +'<h4>' + member.role + '</h4>';
+        
 }
+
 
 
