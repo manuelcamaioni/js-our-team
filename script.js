@@ -59,9 +59,9 @@ const members = [
     }
 ];
 
-const divElements = document.querySelectorAll('div.card');
 
 for(i = 0; i < members.length; i++){
+    const divElements = document.querySelectorAll('div.card');
     const card = divElements[i];
     const member = members[i];
 
