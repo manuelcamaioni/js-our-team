@@ -59,7 +59,6 @@ const members = [
     }
 ];
 
-const mainElement = document.querySelector('main');
 const divElements = document.querySelectorAll('div.card');
 
 for(i = 0; i < members.length; i++){
