@@ -58,13 +58,22 @@ const members = [
         photo:'barbara-ramos-graphic-designer.jpg'
     }
 ];
-
-let member;
+const mainElement = document.querySelector('main');
+const divElements = document.querySelectorAll('div.card');
 
 for(i = 0; i < members.length; i++){
-    member = members[i];
+    let card = divElements[i];
+    let member = members[i];
+
     console.log(member);
     for(let key in member){
         console.log(key, member[key]);
+
+        card.innerHTML += key + ': ' + member[key] + '</br>';
+        
+       
     }
+    mainElement.appendChild(card);
 }
+
+
