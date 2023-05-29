@@ -51,10 +51,20 @@ const members = [
         role: 'Developer',
         photo:'scott-estrada-developer.jpg'
     },
-    
+
     {
         name: 'Barbara Ramos',
         role: 'Graphic Designer',
         photo:'barbara-ramos-graphic-designer.jpg'
     }
 ];
+
+let member;
+
+for(i = 0; i < members.length; i++){
+    member = members[i];
+    console.log(member);
+    for(let key in member){
+        console.log(key, member[key]);
+    }
+}
