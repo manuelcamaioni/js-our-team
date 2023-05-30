@@ -59,16 +59,12 @@ const members = [
     }
 ];
 
+const divElements = document.querySelectorAll('div.card');
 
 for(i = 0; i < members.length; i++){
-    const divElements = document.querySelectorAll('div.card');
     const card = divElements[i];
     const member = members[i];
 
     console.log(member);
     card.innerHTML = `<img src="img/${member.photo}" width=100%>` + '<h3>' + member.name + '</h3>' +'<h4>' + member.role + '</h4>';
-        
 }
-
-
-
